@@ -34,6 +34,6 @@ bool Point::operator==(const Point& other) const
 
 ostream& operator<<(ostream& stream, const Point& point)
 {
-	stream << "(" << point.getX() << point.getY() << ")" << endl;
+	stream << "(" << point.getX() << ", " << point.getY() << ")" << endl;
 	return stream;
 }

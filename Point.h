@@ -17,8 +17,8 @@ public:
 	bool operator==(const Point& other) const;
 
 private:
-	int x = 0;
-	int y = 0;
+	int x;
+	int y;
 };
 
 ostream& operator<<(ostream& stream, const Point& point);
