@@ -7,7 +7,7 @@ using namespace std;
 
 int main()
 {
-    Point(10, 20);
+    return 0;
     
     
 }

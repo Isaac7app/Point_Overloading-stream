@@ -1,31 +1,34 @@
 #include "Point.h"
 
-Point::Point(int valueOne, int valueTwo) : valueOne{valueOne}, valueTwo{valueTwo}
+
+
+Point::Point(int x, int y) : x{x}, y{y}
 {
 }
 
-int Point::getValueOne() const
+int Point::getX()
 {
-	return valueOne;
+	return x;
 }
 
-int Point::getValueTwo()
+int Point::getY()
 {
-	return valueTwo;
+	return y;
 }
 
-void Point::setValueOne(int valueOne)
+void Point::setX(int x)
 {
-	this->valueOne = valueOne;
+	 this->x = x;
 }
 
-void Point::setValueTwo(int valueTwo)
+void Point::setY(int y)
 {
-	this->valueTwo = valueTwo;
+	this->y = y;
 }
+
 
 ostream& operator<<(ostream& stream, const Point& point)
 {
-	stream << point.getValueOne();
+	stream << "(" << point.getX() << point.getY() << ")" << endl;
 	return stream;
 }

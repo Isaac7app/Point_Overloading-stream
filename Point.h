@@ -6,17 +6,16 @@ using namespace std;
 class Point
 {
 public:
-	Point(int valueOne,int valueTwo);
+	Point(int x, int y);
 
-	int getValueOne() const;
-	int getValueTwo();
-
-	void setValueOne(int valueOne);
-	void setValueTwo(int valueTwo);
+	int getX();
+	int getY();
+	void setX(int x);
+	void setY(int y);
 
 private:
-	int valueOne;
-	int valueTwo;
+	int x;
+	int y;
 };
 
 ostream& operator<<(ostream& stream, const Point& point);
