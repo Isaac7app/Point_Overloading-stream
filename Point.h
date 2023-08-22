@@ -8,14 +8,17 @@ class Point
 public:
 	Point(int x, int y);
 
-	int getX();
-	int getY();
+	int getX() const;
+	int getY() const;
+
 	void setX(int x);
 	void setY(int y);
 
+	bool operator==(const Point& other) const;
+
 private:
-	int x;
-	int y;
+	int x = 0;
+	int y = 0;
 };
 
 ostream& operator<<(ostream& stream, const Point& point);
